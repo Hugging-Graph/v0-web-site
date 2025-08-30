@@ -147,8 +147,8 @@ export default function AboutPage() {
 
             {/* CTA */}
             <div className="text-center bg-slate-900 rounded-2xl p-12 text-white">
-              <h3 className="text-2xl font-bold mb-2">Lets's Do This</h3>
-              <p className="text-slate-300 mb-2 text-lg">Duncan Krebs<br/>Hugs & GraphsHugging Face </p>
+              <h3 className="text-2xl font-bold mb-1">Lets's Do This</h3>
+              <p className="text-slate-300 mb-2 text-lg">Duncan Krebs<br/>Hugs & Graphs </p>
             </div>
           </div>
         </div>
