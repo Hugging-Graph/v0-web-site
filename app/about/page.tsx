@@ -1,27 +1,53 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, GitBranch, Workflow, Users } from "lucide-react"
 import Image from "next/image"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "About HuggingGraph - Reusable AI Workflows by Duncan Krebs",
+  description:
+    "Learn about the future of reusable AI workflows with HuggingGraph. Duncan Krebs explains why LangGraph-based workflow hubs are inevitable and how they'll transform AI development.",
+  keywords: [
+    "HuggingGraph",
+    "Hugging Graph",
+    "Duncan Krebs",
+    "Reusable AI Workflows",
+    "AI Workflows",
+    "Workflow hub",
+    "LangGraph workflows",
+    "AI development",
+    "Workflow automation",
+    "Conversational AI",
+  ],
+  openGraph: {
+    title: "About HuggingGraph - The Future of AI Workflows",
+    description:
+      "Duncan Krebs explains why reusable AI workflows built with LangGraph are inevitable and how HuggingGraph will become the workflow hub for developers.",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About HuggingGraph - Reusable AI Workflows by Duncan Krebs",
+    description:
+      "Learn why LangGraph-based workflow hubs are inevitable and how HuggingGraph will transform AI development.",
+  },
+}
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center gap-4">
-              <Image src="/hugger-face.png" alt="HuggingGraph" width={48} height={48} className="rounded-lg" />
+            <Link href="/" className="flex items-center">
               <div>
-                <h1 className="text-2xl font-bold text-slate-900">HuggingGraph</h1>
-                <p className="text-sm text-slate-600">Reusable AI Workflows</p>
+                <h1 className="text-3xl font-bold text-orange-600">Hugging Graph</h1>
+                <p className="text-sm text-slate-600 text-center">Reusable AI Workflows</p>
               </div>
             </Link>
             <div className="hidden md:flex items-center gap-6"></div>
-            <Link href="/docs">
-              <Button>Getting Started</Button>
-            </Link>
           </div>
         </div>
       </nav>
@@ -29,7 +55,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold text-slate-900 mb-6 text-balance">
+          <h1 className="text-5xl font-bold text-orange-600 mb-6 text-balance">
             The Future of AI Workflows Is Inevitable
           </h1>
           <p className="text-xl text-slate-600 mb-8 text-pretty">
@@ -147,8 +173,8 @@ export default function AboutPage() {
 
             {/* CTA */}
             <div className="text-center bg-slate-900 rounded-2xl p-12 text-white">
-              <h3 className="text-2xl font-bold mb-1">Lets's Do This</h3>
-              <p className="text-slate-300 mb-2 text-lg">Duncan Krebs<br/>Hugs & Graphs </p>
+              <h3 className="text-2xl font-bold mb-1">Hugs & Graphs</h3>
+              <p className="text-slate-300 mb-2 text-2xl font-bold">Duncan Krebs - Founder</p>
             </div>
           </div>
         </div>
@@ -175,7 +201,6 @@ export default function AboutPage() {
               <Badge variant="outline" className="border-slate-600 text-slate-400">
                 Phase 1
               </Badge>
-            
             </div>
           </div>
         </div>

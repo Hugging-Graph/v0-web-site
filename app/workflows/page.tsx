@@ -6,6 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Search, Filter, Star, Download, GitBranch, Clock, User, Zap } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import type { Metadata } from "next"
 
 // Mock workflow data
 const workflows = [
@@ -93,6 +94,38 @@ const categories = [
   "Customer Service",
   "Moderation",
 ]
+
+export const metadata: Metadata = {
+  title: "AI Workflows Hub - Browse Reusable LangGraph Workflows | HuggingGraph",
+  description:
+    "Discover and share reusable AI workflows built with LangGraph. Browse quiz agents, chart generators, document processors, and more workflow templates by Duncan Krebs and the community.",
+  keywords: [
+    "AI Workflows",
+    "Reusable AI Workflows",
+    "LangGraph workflows",
+    "Workflow hub",
+    "HuggingGraph",
+    "Hugging Graph",
+    "Duncan Krebs",
+    "Quiz agents",
+    "Chart generators",
+    "Document processors",
+    "AI workflow templates",
+    "Conversational AI",
+    "Workflow automation",
+  ],
+  openGraph: {
+    title: "AI Workflows Hub - Browse Reusable LangGraph Workflows",
+    description:
+      "Discover and share reusable AI workflows built with LangGraph. Browse quiz agents, chart generators and more workflow templates.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Workflows Hub - Browse Reusable LangGraph Workflows",
+    description: "Discover and share reusable AI workflows built with LangGraph by Duncan Krebs and the community.",
+  },
+}
 
 export default function WorkflowsPage() {
   return (

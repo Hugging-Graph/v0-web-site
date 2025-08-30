@@ -7,9 +7,53 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
+  title: "HuggingGraph — Reusable AI Workflows with LangGraph | Duncan Krebs",
+  description:
+    "The ultimate workflow hub for reusable AI workflows. HuggingGraph by Duncan Krebs enables developers to share, compose, and extend AI workflows built with LangGraph. Discover curated AI workflows for your next project.",
+  keywords: [
+    "HuggingGraph",
+    "Hugging Graph",
+    "Reusable AI Workflows",
+    "AI Workflows",
+    "Duncan Krebs",
+    "Workflow hub",
+    "LangGraph",
+    "AI workflow repository",
+    "Conversational AI",
+    "Workflow automation",
+    "AI development tools",
+  ],
+  authors: [{ name: "Duncan Krebs" }],
+  creator: "Duncan Krebs",
+  publisher: "HuggingGraph",
   generator: "v0.app",
+  openGraph: {
+    title: "HuggingGraph — Reusable AI Workflows with LangGraph",
+    description:
+      "The workflow hub for reusable AI workflows. Share, compose, and extend AI workflows built with LangGraph.",
+    url: "https://hugginggraph.com",
+    siteName: "HuggingGraph",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HuggingGraph — Reusable AI Workflows with LangGraph",
+    description:
+      "The workflow hub for reusable AI workflows by Duncan Krebs. Share, compose, and extend AI workflows built with LangGraph.",
+    creator: "@duncankrebs",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 }
 
 export default function RootLayout({
