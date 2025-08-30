@@ -147,8 +147,8 @@ export default function AboutPage() {
 
             {/* CTA */}
             <div className="text-center bg-slate-900 rounded-2xl p-12 text-white">
-              <h3 className="text-2xl font-bold mb-4">Lets's Do This</h3>
-              <p className="text-slate-300 mb-2 text-lg">Duncan Krebs </p>
+              <h3 className="text-2xl font-bold mb-2">Lets's Do This</h3>
+              <p className="text-slate-300 mb-2 text-lg">Duncan Krebs<br/>Hugs & GraphsHugging Face </p>
             </div>
           </div>
         </div>
@@ -170,12 +170,12 @@ export default function AboutPage() {
           </div>
 
           <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center">
-            <p className="text-sm text-slate-400">© 2025 HuggingGraph. Founded by Duncan Krebs.</p>
+            <p className="text-sm text-slate-400">© 2025 HuggingGraph.</p>
             <div className="flex items-center gap-4 mt-4 sm:mt-0">
               <Badge variant="outline" className="border-slate-600 text-slate-400">
                 Phase 1
               </Badge>
-              <span className="text-sm text-slate-400">Built with ❤️ for the AI community</span>
+            
             </div>
           </div>
         </div>
