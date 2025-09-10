@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { ArrowRight, GitBranch, Workflow, Users } from "lucide-react"
 import Image from "next/image"
 import type { Metadata } from "next"
@@ -47,7 +48,24 @@ export default function AboutPage() {
                 <p className="text-sm text-slate-600 text-center">Reusable AI Workflows</p>
               </div>
             </Link>
-            <div className="hidden md:flex items-center gap-6"></div>
+            <div className="hidden md:flex items-center gap-6">
+              <Link href="/blueprints">
+                <Button
+                  variant="outline"
+                  className="border-orange-200 text-orange-600 hover:bg-orange-50 bg-transparent"
+                >
+                  Blueprints
+                </Button>
+              </Link>
+              <Link href="/about">
+                <Button
+                  variant="outline"
+                  className="border-orange-200 text-orange-600 hover:bg-orange-50 bg-transparent"
+                >
+                  About
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </nav>

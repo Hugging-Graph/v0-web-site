@@ -138,7 +138,7 @@ export default function WorkflowsPage() {
               <Link href="/" className="flex items-center gap-3">
                 <Image src="/hugger-logo.png" alt="HuggingGraph" width={40} height={40} className="rounded-lg" />
                 <div>
-                  <h1 className="text-xl font-bold text-slate-900">HuggingGraph</h1>
+                  <h1 className="text-xl font-bold text-slate-900">Dunkplay</h1>
                   <p className="text-xs text-slate-600">Reusable AI Workflows</p>
                 </div>
               </Link>

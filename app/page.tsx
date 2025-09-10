@@ -19,9 +19,22 @@ export default function HomePage() {
               </div>
             </div>
             <div className="hidden md:flex items-center gap-6">
-              <Button size="sm" asChild>
-                <Link href="/about">About</Link>
-              </Button>
+              <Link href="/blueprints">
+                <Button
+                  variant="outline"
+                  className="border-orange-200 text-orange-600 hover:bg-orange-50 bg-transparent"
+                >
+                  Blueprints
+                </Button>
+              </Link>
+              <Link href="/about">
+                <Button
+                  variant="outline"
+                  className="border-orange-200 text-orange-600 hover:bg-orange-50 bg-transparent"
+                >
+                  About
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
